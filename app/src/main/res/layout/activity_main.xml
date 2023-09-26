@@ -1,0 +1,62 @@
+<!-- activity_main.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_title"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textViewTitle"/>
+
+    <EditText
+        android:id="@+id/editTextSalaryBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salario Base"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextHoursExtras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horas Extras"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextBonuses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bonificaciones"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"/> <!-- Asegúrate de que esta línea esté correcta -->
+
+    <TextView
+        android:id="@+id/textViewTotalSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salario Total: "
+        android:textSize="18sp"/>
+    
+</LinearLayout>

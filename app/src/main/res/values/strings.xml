@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Actividad 1 - CIPAS DEV</string>
+    <string name="activity_title">Actividad 1</string> <!-- Nueva cadena con el título -->
+</resources>
